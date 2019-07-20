@@ -1,0 +1,3 @@
+package io.freshdroid.skyscanner.splashscreen.network
+
+interface ApiSplashScreenType

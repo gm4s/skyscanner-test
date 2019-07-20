@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                   xmlns:tools="http://schemas.android.com/tools"
+                                   android:id="@+id/chatRequestReceivedCardView"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:layout_marginStart="@dimen/margin_regular"
+                                   android:layout_marginLeft="@dimen/margin_regular"
+                                   android:layout_marginTop="@dimen/margin_mini"
+                                   android:layout_marginEnd="@dimen/margin_regular"
+                                   android:layout_marginRight="@dimen/margin_regular"
+                                   android:layout_marginBottom="@dimen/margin_mini"
+                                   android:gravity="center_vertical"
+                                   android:orientation="horizontal"
+                                   app:cardCornerRadius="@dimen/corner_radius_mini"
+                                   app:cardElevation="@dimen/elevation_card_min">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical">
+
+        <TableLayout
+                android:id="@+id/legsTableLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_regular_plus"
+                android:layout_marginEnd="@dimen/margin_regular_plus"
+                android:layout_marginTop="@dimen/margin_regular"/>
+
+        <View android:layout_width="match_parent"
+              android:layout_height="0.5dp"
+              android:background="#DBDBDB"/>
+
+        <TextView
+                android:id="@+id/priceTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                tools:text="£33"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                android:textColor="#544C63"
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_marginStart="@dimen/margin_regular"
+                android:layout_marginEnd="@dimen/margin_regular_plus"/>
+
+        <TextView
+                android:id="@+id/agentNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                tools:text="British Airways"
+                android:alpha="0.7"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
+                android:textColor="#898294"
+                android:layout_marginStart="@dimen/margin_regular"
+                android:layout_marginEnd="@dimen/margin_regular_plus"
+                android:layout_marginBottom="@dimen/margin_regular"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
